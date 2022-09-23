@@ -26,6 +26,7 @@ const Cart = ({ cart, addToCart, changeQuantity }: CartProps) => {
             addToCart={addToCart}
             borderColorIdx={i % 4}
             changeQuantity={changeQuantity}
+            key={cartItem.id}
           />
         ))}
         <p className="summary">Summary: {summary}</p>

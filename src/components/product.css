@@ -1,0 +1,85 @@
+.product {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+  padding: 30px;
+  margin: 20px 0px;
+}
+
+.product h2 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.product__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.product__header h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.buttons-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.product p {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 12px !important;
+}
+
+.btn {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: transparent;
+  margin-right: 12px;
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-edit {
+  border: 3px solid hsl(0, 78%, 62%);
+}
+
+.btn-delete {
+  border: 3px solid hsl(212, 86%, 64%);
+}
+
+.btn-cart {
+  border: 3px solid hsl(34, 97%, 64%);
+}
+.btn:active {
+  transform: translateY(10px);
+}
+
+.btn:disabled {
+  opacity: 0.3;
+}
+
+.btn:disabled:hover {
+  background-color: transparent;
+}
+
+.cyan {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.red {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.blue {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+.orange {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}

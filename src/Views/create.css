@@ -1,0 +1,64 @@
+.form-wrap {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 42px;
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+  padding: 30px;
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form h2 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+form input {
+  background-color: transparent;
+  box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+  border: 0px;
+  border-bottom: 1px solid gray;
+  opacity: 0.6;
+  padding: 8px 24px;
+  padding-left: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: hsl(234, 12%, 34%);
+  outline: none;
+  transition: 0.2s ease;
+}
+
+form input:focus {
+  opacity: 1;
+  border-bottom: 1px solid black;
+}
+
+form button {
+  width: fit-content;
+  font-size: 12px;
+  background-color: transparent;
+  border: 3px solid hsl(34, 97%, 64%);
+  border-radius: 12px;
+  padding: 8px 24px;
+  cursor: pointer;
+  font-weight: 700;
+  color: hsl(234, 12%, 34%);
+  transition: 0.2s ease;
+}
+
+form button:active {
+  transform: translateY(10px);
+}
+
+@media screen and (max-width: 768px) {
+  .form-wrap {
+    width: 80%;
+  }
+}

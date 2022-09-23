@@ -1,2 +1,116 @@
-.App {
+.main {
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.products-list h2 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.main__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.main__header .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__header button {
+  font-size: 12px;
+  background-color: transparent;
+  border: 3px solid hsl(34, 97%, 64%);
+  border-radius: 12px;
+  padding: 8px 24px;
+  cursor: pointer;
+  font-weight: 700;
+  color: hsl(234, 12%, 34%);
+  transition: 0.2s ease;
+}
+
+.main__header input {
+  width: 100%;
+  background-color: transparent;
+  box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+  border: 0px;
+  border-bottom: 1px solid gray;
+  opacity: 0.6;
+  padding: 8px 24px;
+  padding-left: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: hsl(234, 12%, 34%);
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.main__header input:focus {
+  opacity: 1;
+  border-bottom: 1px solid black;
+}
+
+.main__header button:active {
+  transform: translateY(5px);
+}
+
+.goToTop {
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  border: 3px solid hotpink;
+  background-color: transparent;
+  position: fixed;
+  border-radius: 12px;
+  bottom: 48px;
+  right: 120px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.goToTop svg {
+  width: 24px;
+  height: 24px;
+}
+
+.goToTop:hover {
+  background-color: hotpink;
+}
+
+.goToTop:hover svg {
+  transition: 0.2s ease;
+  fill: white;
+}
+
+.goToTop.active {
+  opacity: 1;
+}
+
+.goToTop:active {
+  bottom: 36px;
+}
+
+.summary {
+  font-size: 24px;
+  padding-bottom: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 80%;
+  }
 }
